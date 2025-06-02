@@ -5,18 +5,10 @@ This repository contains SQL queries for analyzing sports data — specifically 
 ## Files
 
 ### 🏅 Task1.sql – Top 5 Goal Scorers
-This SQL script returns the top 5 players who have scored the most goals.
+Write a SQL query to list the top 5 players who have the highest number of goals scored. Include their name, team, goals scored, and position.
 
-**Details:**
-- Joins `playertable` and `teamtable` on `Team_id`
-- Displays `Name`, `Team_name`, `Goals_scored`, and `Position`
-- Orders by `Goals_scored` in descending order
-- Limits the result to the top 5 players
+### 🏅 Task1.sq2 – Best Value for Money Players
+Write a SQL query to identify the top 3 players who provide the best value for money. "Value for money" is defined as the number of goals scored per unit of salary (goals/salary). Show player name, team name, goals, salary, and their calculated value-for-money ratio.
 
-```sql
-SELECT Name, Team_name, Goals_scored, Position
-FROM playertable
-JOIN teamtable ON playertable.Team_id = teamtable.Team_id
-ORDER BY Goals_scored DESC
-LIMIT 5;
+
 
